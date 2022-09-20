@@ -40,13 +40,14 @@
 			border-radius: 15px;
 			display: inline-block;
 			margin: 10px 5px;
-			content: '';
 		}
 		.row.user > .bubble{
 			background-color: blue;
+			word-break: break-all;
 		}
 		.row.robot > .bubble{
 			background-color: gray;
+			word-break: break-all;
 		}
 		.row.user{
 			text-align: right;
@@ -59,38 +60,11 @@
 			<div class="chat">
 				<div class="upper-side">
 					<div class="message" id="chat">
-							<div class="row user">
-								<div class="bubble">что ты делаеш?сделал домашку</div>
-							</div>
-							<div class="row robot">
-								<div class="bubble">я тебя найду</div>
-							</div>
-							<div class="row user">
-								<div class="bubble">ШО</div>
-							</div>
-							<div class="row robot">
-								<div class="bubble">дадада я уже стою у твоего дома</div>
-							</div>
-							<div class="row robot">
-								<div class="bubble">Видиш чёрный гелик у твоего дома?</div>
-							</div>
-							<div class="row user">
-								<div class="bubble">О НЕТ НЕ НАДО</div>
-							</div>
-							<div class="row user">
-								<div class="bubble">ОНИ ВЫХОДЯТТ ИЗ ТАЧККИ</div>
-							</div>
-							<div class="row robot">
-								<div class="bubble">А я говорил что найду тебя</div>
-							</div>
-							<div class="row robot">
-								<div class="bubble">ХАХАХААХАХ</div>
-							</div>
 					</div>
 				</div>
 				<div class="down">
 					<input type="text" id="input">
-					<button class="send" onclick="func()">
+					<button class="send" onclick="send_user_message()">
 					<img src="send-svgrepo-com.svg">
 					</button>
 				</div>
