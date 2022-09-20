@@ -40,6 +40,7 @@
 			border-radius: 15px;
 			display: inline-block;
 			margin: 10px 5px;
+			content: '';
 		}
 		.row.user > .bubble{
 			background-color: blue;
@@ -57,7 +58,7 @@
 		<div class="wrapper">
 			<div class="chat">
 				<div class="upper-side">
-					<div class="message">
+					<div class="message" id="chat">
 							<div class="row user">
 								<div class="bubble">что ты делаеш?сделал домашку</div>
 							</div>
@@ -88,14 +89,14 @@
 					</div>
 				</div>
 				<div class="down">
-					<input type="text" name="">
-					<button class="send" onclick="">
+					<input type="text" id="input">
+					<button class="send" onclick="func()">
 					<img src="send-svgrepo-com.svg">
 					</button>
 				</div>
+				<script src="script.js"></script>
 			</div>
 		</div>
 	</div>
-	<script type="script.js"></script>
 </body>
 </html>
