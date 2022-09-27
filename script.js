@@ -18,23 +18,20 @@ function AI_response(message) {
  let row = document.createElement("div");
  row.className = "row robot"
  chat.appendChild(row);
- row.innerHTML = '<div class="bubble"> Вы написали ' + answer +'</div>';
+ row.innerHTML = '<div class="bubble">' + answer +'</div>';
   
 }
 
  const Lgb = () => {
-    let questions = [{
-id: 1, 
-messageFind: "Как дела"
-}];
+    let questions = [{id: 1, messageFind: "Как дела"},
+   	 	{id: 2, messageFind:"Ты кто"},
+    	{id: 3, messageFind:"Я тебя убью"}];
 
-let answers = [{
-id: 1,
-answer: "Нормально"
-}]
+	let answers = [{id: 1,answer: "Нормально"},
+		{id: 2, answer:"Я ты"},
+		{id:3, answer:"чоо, посмотрим"}]
 if (message){
-
 let answerId = questions.find(mes => mes.messageFind === message).id;
 answer = answers.find(answerFound => answerFound.id=== answerId).answer;
 }
-  }
+}
